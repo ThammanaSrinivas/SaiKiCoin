@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>SaiKi Coin Transactions</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <center>
+            <h1>SaiKi Coin Transactions</h1>
+            <input type="submit" onclick="get_chain()" value="Get Chain">
+            <input type="submit" onclick="verify_chain()" value="Verify Chain">
+            <input type="submit" onclick="mine_block()" value="Mine Block">
+            <input type="submit" onclick="new_transaction()" value="New Transaction">
+            <div id="transaction-details">
+                <br><br>
+                <label> <b>Sender:</b> </label> <input type="text" id="transaction-sender"><br>
+                <label> <b>Receiver:</b> </label> <input type="text" id="transaction-receiver"><br>
+                <label> <b>Amount:</b> </label> <input type="number" id="transaction-amount"><br>
+                <input type="submit" onclick="add_transaction()" value="Add Transaction">
+            </div>
+            <br><br>
+            <div id="result"></div>
+        </center>
+    </body>
+</html>

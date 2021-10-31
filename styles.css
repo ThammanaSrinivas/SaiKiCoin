@@ -1,0 +1,9 @@
+body {
+    background-color: #adc4ff;
+    color: #000000;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+#transaction-details {
+    display: None;
+}
