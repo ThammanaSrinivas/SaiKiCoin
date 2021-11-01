@@ -1,9 +1,22 @@
 body {
-    background-color: #adc4ff;
+    background-color: #ddc4ff;
     color: #000000;
     font-family: 'JetBrains Mono', monospace;
 }
 
 #transaction-details {
     display: None;
+}
+
+#block-chain-network-image {
+    animation: rotation 6s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
